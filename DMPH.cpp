@@ -38,7 +38,7 @@
  	else if(vel < 0){ //rotação do motor sentido antihorário.
  		digitalWrite(pino1,LOW);
  		digitalWrite(pino2,HIGH);
- 		analogWrite(pinoVel,vel);
+ 		analogWrite(pinoVel,abs(vel));
  	}
  }
 
